@@ -1,10 +1,12 @@
 const MDCTextField = mdc.textField.MDCTextField;
 const MDCRipple = mdc.ripple.MDCRipple;
+const MDCSlider = mdc.slider.MDCSlider;
 
 const foregroundTextField = new MDCTextField(document.querySelector('.foreground-text-field'));
 const backgroundTextField = new MDCTextField(document.querySelector('.background-text-field'));
 const frameTextField = new MDCTextField(document.querySelector('.frame-text-field'));
 new MDCRipple(document.querySelector('.mdc-button'));
+new MDCSlider(document.querySelector('.mdc-slider'));
 
 foregroundTextField.value = "#00000000";
 backgroundTextField.value = "#00FFFFFF";
