@@ -10,9 +10,18 @@ backgroundTextField.value = "#00FFFFFF";
 
 function onClick() {
     const background = document.getElementsByClassName("background");
+    const foreground = document.getElementsByClassName("foreground");
+    const foregroundStroke = document.getElementsByClassName("foreground-stroke");
     const backgroundColor = backgroundTextField.value;
+    const foregroundColor = foregroundTextField.value;
+
     for (let i = 0; i < background.length; i++) {
         background[i].setAttribute("fill", backgroundColor);
     }
-    foregroundTextField.value;
+    for (let i = 0; i < foreground.length; i++) {
+        foreground[i].setAttribute("fill", foregroundColor);
+    }
+    for (let i = 0; i < foregroundStroke.length; i++) {
+        foregroundStroke[i].setAttribute("stroke", foregroundColor);
+    }
 }
