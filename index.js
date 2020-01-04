@@ -3,10 +3,12 @@ const MDCRipple = mdc.ripple.MDCRipple;
 
 const foregroundTextField = new MDCTextField(document.querySelector('.foreground-text-field'));
 const backgroundTextField = new MDCTextField(document.querySelector('.background-text-field'));
+const frameTextField = new MDCTextField(document.querySelector('.frame-text-field'));
 new MDCRipple(document.querySelector('.mdc-button'));
 
 foregroundTextField.value = "#00000000";
 backgroundTextField.value = "#00FFFFFF";
+frameTextField.value = "#00FFFFFF";
 
 function onClick() {
     const background = document.getElementsByClassName("background");
