@@ -13,9 +13,12 @@ frameTextField.value = "#00FFFFFF";
 function onClick() {
     const background = document.getElementsByClassName("background");
     const foreground = document.getElementsByClassName("foreground");
+    const frame = document.getElementsByClassName("frame");
     const foregroundStroke = document.getElementsByClassName("foreground-stroke");
+
     const backgroundColor = backgroundTextField.value;
     const foregroundColor = foregroundTextField.value;
+    const frameColor = frameTextField.value;
 
     for (let i = 0; i < background.length; i++) {
         background[i].setAttribute("fill", backgroundColor);
@@ -25,5 +28,8 @@ function onClick() {
     }
     for (let i = 0; i < foregroundStroke.length; i++) {
         foregroundStroke[i].setAttribute("stroke", foregroundColor);
+    }
+    for (let i = 0; i < frame.length; i++) {
+        frame[i].setAttribute("fill", frameColor);
     }
 }
