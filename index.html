@@ -10,8 +10,8 @@
         <body>
             <svg width="224" height="224" viewBox="0 0 224 224" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0)">
-                <rect width="224" height="224" fill="white"/>
-                <circle cx="112" cy="112" r="102" fill="white" stroke="black" stroke-width="20"/>
+                <rect width="224" height="224" fill="white" class="background" />
+                <circle cx="112" cy="112" r="102" fill="white" stroke="black" stroke-width="20" class="background" />
                 <path d="M196 80C167.364 84.6545 142.434 88.7093 120.732 92.2421C78.8196 99.0646 81.3404 160.84 123.791 161.921V161.921C124.286 161.934 126.65 162.544 126.454 162.999C105.616 211.33 126.739 162.337 105.327 212" stroke="black" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M49.7526 104C49.7526 116.846 53.9253 161.969 28 166" stroke="black" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
                 <circle cx="140" cy="122" r="12" fill="black"/>
@@ -20,12 +20,12 @@
                 </g>
                 <defs>
                 <clipPath id="clip0">
-                <rect width="224" height="224" fill="white"/>
+                <rect width="224" height="224" fill="white" class="background" />
                 </clipPath>
                 </defs>
             </svg>
             <div>
-                <div class="mdc-text-field mdc-text-field--outlined background">
+                <div class="mdc-text-field mdc-text-field--outlined foreground-text-field">
                     <input type="text" id="foreground-text-field" class="mdc-text-field__input" aria-label="Label">
                     <div class="mdc-notched-outline">
                         <div class="mdc-notched-outline__leading"></div>
@@ -35,7 +35,7 @@
                         <div class="mdc-notched-outline__trailing"></div>
                     </div>
                 </div>
-                <div class="mdc-text-field mdc-text-field--outlined foreground">
+                <div class="mdc-text-field mdc-text-field--outlined background-text-field">
                     <input type="text" id="background-text-field" class="mdc-text-field__input" aria-label="Label">
                     <div class="mdc-notched-outline">
                         <div class="mdc-notched-outline__leading"></div>
