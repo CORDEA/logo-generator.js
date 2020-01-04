@@ -8,9 +8,9 @@ const frameTextField = new MDCTextField(document.querySelector('.frame-text-fiel
 new MDCRipple(document.querySelector('.mdc-button'));
 const slider = new MDCSlider(document.querySelector('.mdc-slider'));
 
-foregroundTextField.value = "#00000000";
-backgroundTextField.value = "#00FFFFFF";
-frameTextField.value = "#00FFFFFF";
+foregroundTextField.value = "#000000";
+backgroundTextField.value = "#FFFFFF";
+frameTextField.value = "#FFFFFF";
 
 function onClick() {
     const background = document.getElementsByClassName("background");
