@@ -6,7 +6,7 @@ const foregroundTextField = new MDCTextField(document.querySelector('.foreground
 const backgroundTextField = new MDCTextField(document.querySelector('.background-text-field'));
 const frameTextField = new MDCTextField(document.querySelector('.frame-text-field'));
 new MDCRipple(document.querySelector('.mdc-button'));
-new MDCSlider(document.querySelector('.mdc-slider'));
+const slider = new MDCSlider(document.querySelector('.mdc-slider'));
 
 foregroundTextField.value = "#00000000";
 backgroundTextField.value = "#00FFFFFF";
@@ -21,6 +21,7 @@ function onClick() {
     const backgroundColor = backgroundTextField.value;
     const foregroundColor = foregroundTextField.value;
     const frameColor = frameTextField.value;
+    const frameAlpha = slider.value;
 
     for (let i = 0; i < background.length; i++) {
         background[i].setAttribute("fill", backgroundColor);
@@ -33,5 +34,6 @@ function onClick() {
     }
     for (let i = 0; i < frame.length; i++) {
         frame[i].setAttribute("fill", frameColor);
+        frame[i].setAttribute("fill-opacity", frameAlpha / 100.0);
     }
 }
