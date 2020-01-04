@@ -7,3 +7,8 @@ new MDCRipple(document.querySelector('.mdc-button'));
 
 foregroundTextField.value = "#00000000";
 backgroundTextField.value = "#00FFFFFF";
+
+function onClick() {
+    foregroundTextField.value;
+    backgroundTextField.value;
+}
