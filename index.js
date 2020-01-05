@@ -1,3 +1,5 @@
+const saveSvgAsPng = require('save-svg-as-png');
+
 const MDCTextField = mdc.textField.MDCTextField;
 const MDCRipple = mdc.ripple.MDCRipple;
 const MDCSlider = mdc.slider.MDCSlider;
@@ -12,7 +14,7 @@ foregroundTextField.value = "#000000";
 backgroundTextField.value = "#FFFFFF";
 frameTextField.value = "#FFFFFF";
 
-function onClick() {
+document.getElementById("apply").onclick = function() {
     const background = document.getElementsByClassName("background");
     const foreground = document.getElementsByClassName("foreground");
     const frame = document.getElementsByClassName("frame");
@@ -36,4 +38,8 @@ function onClick() {
         frame[i].setAttribute("fill", frameColor);
         frame[i].setAttribute("fill-opacity", frameAlpha / 100.0);
     }
+}
+
+document.getElementById("save").onclick = function() {
+    saveSvgAsPng.saveSvgAsPng(document.getElementById("logo"), "logo.png");
 }
