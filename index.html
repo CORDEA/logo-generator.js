@@ -62,28 +62,45 @@
                             </div>
                         </div>
                     </div>
-                    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6">
-                        <div class="mdc-slider mdc-slider--discrete"
-                             tabindex="0"
-                             role="slider"
-                             aria-valuemin="0"
-                             aria-valuemax="100"
-                             aria-valuenow="0">
-                            <div class="mdc-slider__track-container">
-                                <div class="mdc-slider__track"></div>
-                            </div>
-                            <div class="mdc-slider__thumb-container">
-                                <div class="mdc-slider__pin">
-                                    <span class="mdc-slider__pin-value-marker"></span>
+                    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
+                        <div class="mdc-layout-grid__inner">
+                            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6">
+                                <div class="mdc-slider mdc-slider--discrete"
+                                     tabindex="0"
+                                     role="slider"
+                                     aria-valuemin="0"
+                                     aria-valuemax="100"
+                                     aria-valuenow="0">
+                                    <div class="mdc-slider__track-container">
+                                        <div class="mdc-slider__track"></div>
+                                    </div>
+                                    <div class="mdc-slider__thumb-container">
+                                        <div class="mdc-slider__pin">
+                                            <span class="mdc-slider__pin-value-marker"></span>
+                                        </div>
+                                        <svg class="mdc-slider__thumb" width="21" height="21">
+                                            <circle cx="10.5" cy="10.5" r="7.875"></circle>
+                                        </svg>
+                                        <div class="mdc-slider__focus-ring"></div>
+                                    </div>
                                 </div>
-                                <svg class="mdc-slider__thumb" width="21" height="21">
-                                    <circle cx="10.5" cy="10.5" r="7.875"></circle>
-                                </svg>
-                                <div class="mdc-slider__focus-ring"></div>
                             </div>
                         </div>
                     </div>
-                    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6"></div>
+                    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
+                        <div class="mdc-layout-grid__inner">
+                            <div class="mdc-text-field mdc-text-field--outlined frame-text-field mdc-layout-grid__cell mdc-layout-grid__cell--span-2">
+                                <input type="text" id="frame-text-field" class="mdc-text-field__input" aria-label="Size">
+                                <div class="mdc-notched-outline">
+                                    <div class="mdc-notched-outline__leading"></div>
+                                    <div class="mdc-notched-outline__notch">
+                                        <label for="frame-text-field" class="mdc-floating-label">Size</label>
+                                    </div>
+                                    <div class="mdc-notched-outline__trailing"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4"></div>
                     <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-1">
                         <button class="mdc-button mdc-button--raised" id="apply">
