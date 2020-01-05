@@ -7,13 +7,14 @@ const MDCSlider = mdc.slider.MDCSlider;
 const foregroundTextField = new MDCTextField(document.querySelector('.foreground-text-field'));
 const backgroundTextField = new MDCTextField(document.querySelector('.background-text-field'));
 const frameTextField = new MDCTextField(document.querySelector('.frame-text-field'));
-const sizeTextField = new MDCTextField(document.querySelector('.size-text-field'));
+const scaleTextField = new MDCTextField(document.querySelector('.scale-text-field'));
 new MDCRipple(document.querySelector('.mdc-button'));
 const slider = new MDCSlider(document.querySelector('.mdc-slider'));
 
 foregroundTextField.value = "#000000";
 backgroundTextField.value = "#FFFFFF";
 frameTextField.value = "#FFFFFF";
+scaleTextField.value = "1";
 
 document.getElementById("apply").onclick = function() {
     const background = document.getElementsByClassName("background");
@@ -42,8 +43,8 @@ document.getElementById("apply").onclick = function() {
 }
 
 document.getElementById("save").onclick = function() {
-    const size = sizeTextField.value;
-    if (size > 0) {
-        saveSvgAsPng.saveSvgAsPng(document.getElementById("logo"), "logo.png", {scale: size});
+    const scale = scaleTextField.value;
+    if (scale > 0) {
+        saveSvgAsPng.saveSvgAsPng(document.getElementById("logo"), "logo.png", {scale: scale});
     }
 }
