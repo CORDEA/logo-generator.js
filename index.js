@@ -7,6 +7,7 @@ const MDCSlider = mdc.slider.MDCSlider;
 const foregroundTextField = new MDCTextField(document.querySelector('.foreground-text-field'));
 const backgroundTextField = new MDCTextField(document.querySelector('.background-text-field'));
 const frameTextField = new MDCTextField(document.querySelector('.frame-text-field'));
+const sizeTextField = new MDCTextField(document.querySelector('.size-text-field'));
 new MDCRipple(document.querySelector('.mdc-button'));
 const slider = new MDCSlider(document.querySelector('.mdc-slider'));
 
@@ -41,5 +42,8 @@ document.getElementById("apply").onclick = function() {
 }
 
 document.getElementById("save").onclick = function() {
-    saveSvgAsPng.saveSvgAsPng(document.getElementById("logo"), "logo.png");
+    const size = sizeTextField.value;
+    if (size > 0) {
+        saveSvgAsPng.saveSvgAsPng(document.getElementById("logo"), "logo.png", {scale: size});
+    }
 }
